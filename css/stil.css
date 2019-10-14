@@ -1,0 +1,272 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+@font-face
+{
+	src:url('moj_font1.ttf');
+	font-family:'mojFont';
+}
+body{
+	font-family:'mojFont';
+	font-size:14px;
+	color:#665;
+}
+.okvir{
+	width:960px;
+	margin:0px auto;
+	
+}
+#logo{
+	width:170px;
+	height:50px;
+	float:left;
+	margin-top:10px;
+}
+#navigacija{
+	float:right;
+}
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+	color:#665;
+}
+#navigacija li{
+	display:block;
+	float:left;
+	margin:20px 15px;
+	width:100px;
+	text-align:center;
+}
+#navigacija ul li a{
+	font-size:16px;
+	
+}
+#navigacija .aktivanLink{
+	border-top:4px solid #89c236;
+	margin-top:0px;
+	padding-top:16px;
+
+}
+#podmeni{
+	position:absolute;
+	width:130px;
+	background:#fff;
+	z-index:1000;
+	display:none;
+}
+#navigacija ul li ul li{
+	border-bottom:4px solid #89c236;
+	text-align:center;
+}
+.cistac{
+	clear:both;
+}
+#slajder{
+	width:100%;
+	margin-top:10px;
+	border-bottom:4px solid #f6f6f6;
+	border-top:4px solid #f6f6f6;
+	padding:50px 0px;
+	background:url(../img/slider.jpg);
+}
+#tekst{
+	float:left;
+	width:600px;
+}
+#tekst h1{
+	color:#fff;
+	font-size:40px;
+	margin-bottom:40px;
+}
+#tekst p{
+	color:#665;
+	margin-bottom:40px;
+	font-style:italic;
+	text-align:justify;
+}
+#slika{
+	float:right;
+	width:304px;
+	height:304px;
+
+}
+#slika img{
+	border:4px solid #f6f6f6;
+	border-radius:10px;
+}
+#automatskiSlajder{
+	width:800px;
+	margin:20px auto;
+	border: 4px solid #f6f6f6;
+	border-radius:15px;
+}
+.slajd{
+	display:none;
+	border-radius:15px;
+	width:800px;
+	height:600px;
+}
+#futer{
+	width:100%;
+	background-color:#252525;
+	padding:30px 0px;
+	border-top:4px solid #f6f6f6;
+	color:#fff;
+	margin-top:20px;
+}
+#copyright{
+	float:left;
+	margin-top:15px;
+}
+#social-network{
+	float:right;
+}
+#social-network li{
+	float:left;
+	display:block;
+	padding:0px 5px;
+}
+h2,h3{
+	text-align:center;
+}
+.okvir h2{
+	font-size:36px;
+	margin:20px 0px;
+}
+#slika img{
+	width:400px;
+	height:300px;
+}
+
+
+.post{
+	border-bottom:1px dashed #666;
+	margin-bottom:20px;
+}
+.post h3{
+	text-align:left;
+	font-size:22px;
+	margin-bottom:20px;
+}
+.opis{
+	background:#666;
+	color:#fff;
+	font-size:16px;
+	margin-bottom:20px;
+}
+.korisnik{
+	margin:10px;
+}
+.datum{
+	float:right;
+	background:#89c236;
+	width:150px;
+	text-align:center;
+}
+.post p{
+	margin-bottom:10px;
+	text-indent:30px;
+}
+
+ .hobi{
+	 width:276px;
+	 margin:10px;
+	 float:left;
+	 padding:5px;
+ }
+ .slikaHobi{
+	 width:250px;
+ }
+ .slikaHobi img{
+	 width:250px;
+	 height:250px;
+	 margin:13px;
+ }
+ .tekstHobi h3{
+	 margin-bottom:15px;
+	 font-size:22px;
+ }
+ .hobi:hover{
+	 border-radius:10px;
+	 box-shadow:0 0 10px #252525;
+ }
+#galerija{
+	width:720px;
+	margin:20px auto;
+}
+#galerija li{
+	width:300px;
+	margin:0px 30px;
+	float:left;
+	display:block;
+}
+#galerija img{
+	width:300px;
+	height:250px;
+	border-radius:5px; 
+}
+#galerija span{
+	text-align:center;
+	margin:20px 0px;
+	display:block;
+	font-size:16px;
+	font-weight:bold;
+}
+#galerija a:hover{
+	text-decoration:underline;
+}
+.slike{
+	width:960px;
+	background:red;
+}
+.slika
+{
+	float:left;
+	margin:10px 10px;
+}
+.slika img{
+	width:300px;
+	height:300px;
+	border-radius:5px;
+}
+.slicica{
+	margin:15px 15px;
+	float:left;
+}
+.slicica img{
+	border-radius:10px;
+	width:210px;
+	height:210px;
+}
+#kontakt{
+	width:720px;
+	margin:20px auto;
+}
+#kontakt table{
+	margin:20px auto;
+}
+#kontakt table td{
+	padding-bottom:10px;
+}
+#kontakt .polje{
+	width:500px;
+	height:33px;
+	padding-left:10px;
+}
+#btnPosalji{
+	width:510px;
+	height:50px;
+	background:#89c236;
+	color:#252525;
+	font-size:16px;
+	border:none;
+}
+#ispis{
+	border-top:1px dashed #666;
+	margin-bottom:20px;
+	display:none;
+}
+

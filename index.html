@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Pocetna | Danin Dragosavac</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/stil.css" type="text/css"/>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		
+		
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				$('#navigacija ul li').hover(function(e)
+				{
+					$(this).find('ul:first').show('slow');
+					},
+					function()
+					{
+						$(this).find('ul:first').hide('slow');
+					});
+					
+					
+					
+				var pocetnaVrednost=0;
+				slajder();
+				function slajder()
+				{
+					var x=$('.slajd');
+					for(var i=0;i<x.length;i++)
+					{
+					$(x[i]).css({'display':'none'});
+					}
+					pocetnaVrednost++;
+					if(pocetnaVrednost>x.length){
+					pocetnaVrednost=1;
+					}
+					$(x[pocetnaVrednost-1]).css({'display':'block'});
+					setTimeout(slajder,2000);
+				}
+			});
+			
+			
+		</script>
+			
+	</head>
+	<body>
+		<div class="okvir">
+			<div id="logo">
+				<a href="index.html" title="Visoka ICT skola"> <img src="img/logo.jpg" alt="Visoka ICT skola"/></a>
+			</div>
+			<div id="navigacija">
+				<ul>
+					<li class="aktivanLink"><a href="index.html">Pocetna</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="hobi.html">Hobi</a></li>
+					<li><a href="galerija.html">Galerija</a> 						
+						<ul id="podmeni">
+								<li><a href="galerija1.html">Glaerija I</a></li>
+								<li><a href="galerija2.html">Galerija II</a> </li>
+						</ul>
+					</li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="cistac">
+		</div>
+		<!-- pocetak veliki zeleni-->
+		<div id="slajder">
+			<div class="okvir">
+				<div id="tekst">
+					<h1>Danin Dragosavac</h1>
+					<p>Zovem se Danin Dragosavac, imam mozda previse godina. Zivim u Beogradu i zavrsio sam srednju skolu Nikola Tesla i Fakultet za Medjunarodnu ekonomiju. Trenutno se bavim programiranjem. Omiljeni sportovi su mi kosarka i fudbal, a omiljenji timovi su mi Sacramento i Partizan. </p>
+				</div>
+				<div id="slika">
+					<img src="img/profilna.jpg" alt="Danin Dragosavac"/>
+				</div>
+			</div>
+			<div class="cistac">
+			</div>
+		</div>
+		<!-- kraj veliki zeleni-->
+		<div class="okvir">
+			<div id="automatskiSlajder">
+				<img src="slajder/prva.jpg" alt="prva slika" class="slajd"/>
+				<img src="slajder/druga.jpg" alt="druga slika" class="slajd"/>
+				<img src="slajder/treca.jpg" alt="treca slika" class="slajd"/>
+				<img src="slajder/cetvrta.jpg" alt="cetvrta slika" class="slajd"/>
+			</div>
+		</div>
+		<div class="cistac">
+		</div>
+		<div id="futer">
+			<div class="okvir">
+				<div id="copyright">	
+					<p>Copyright &copy; 2018. Danin Dragosavac</p>
+				</div>
+				<div id="social-network">
+					<ul>
+						<li><a href="https://www.pinterest.com/DaninDragosavac/"> <img src="img/pt.jpg" alt="Pinterest"/> </a></li>
+						<li><a href="https://twitter.com/DaninDragosavac"> <img src="img/tw.jpg" alt="Twitter"/> </a></li>
+						<li><a href="https://plus.google.com/u/0/111004218308768568801"> <img src="img/gp.jpg" alt="Google"/> </a></li>						
+					</ul>
+				</div>
+			</div>
+			<div class="cistac">
+			</div>
+		</div>
+	</body>
+</html>
